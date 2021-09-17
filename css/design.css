@@ -1,0 +1,825 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-size: 16px;
+    font-family: 'Helvetica', serif;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 999; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+header #hUno{
+    display: none;
+}
+#hDos{
+        position: fixed;
+        top: 80vh;
+        left: 0px;
+        margin: 0px;
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+        z-index: 999;
+        cursor: pointer;
+}
+#hDos >*{
+    text-decoration: none;
+    /*display: inline-block;*/
+}
+ #hDos figure{
+    position: relative;
+    left: 5px;
+    bottom: -5px;
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+}
+#hDos figure img{
+    width: 100%;
+}
+header nav{
+    position: relative;
+    top:15px;
+}
+header nav .ioMenuMovil{
+    height: 35px;
+    width: 35px;
+    background: rgb(209, 203, 203);
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+    left: 50%;
+    position: relative;
+    margin-left: -17px;
+    border-radius: 5px;
+}
+header nav .ioMenuMovil:before{
+   position: absolute;
+   font-size: 1.2em;
+   font-family: 'icomoon';
+   color: black;
+   left: 8px;
+   top: 6px;
+}
+header nav #showMenu:before{
+    content: "\e9bb";
+}
+header nav #hideMenu:before{
+    content: "\ea3c";
+    transform: rotate(180deg);  
+}
+header nav #card_menu{
+    position: relative;
+    margin: 0px;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    padding-bottom: 2px;
+    top: -35px;
+    display: none;
+}
+header nav #card_menu ul{
+    /*text-align: left;*/
+    width: 98%;
+    margin-left: 1%;
+    padding: 0px;
+    position: relative;
+}
+header nav #card_menu ul li{
+    list-style: none;
+    font-size: 0.9em;
+    padding:10px 0px 10px 0px;
+    width: 100%;
+    position: relative;
+}
+header nav #card_menu ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    margin-left: 20px;
+    padding-right: 80%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+header nav #card_menu ul li:hover{
+    background: #4d4c4c;
+}
+header nav #card_menu ul li:hover a{
+    color: orange;
+    
+}
+
+#slider{
+    width: 100%;
+    height: 700px;
+    /*background: black;*/
+    position: relative;
+}
+#slider section.slide{
+    position: absolute;
+    width: 100%;
+    top:0px;
+    left: 0px;
+}
+#slider #home{
+    /*height: 600px;*/
+    position: relative;
+    top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+#slider #aboutme{
+    height: 400px;
+    background: blue;
+}
+#slider #precios{
+    height: 300px;
+    background: orange;
+}
+#slider #home .mainlogo{ 
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    background:  linear-gradient(to right, hsla(330, 3%, 13%, 0.459), 
+            hsla(317, 8%, 17%, 0.664)), url(../img/imaindex.png); 
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    position: relative;
+    display: inline-block;
+}
+#cont_mainlogo{
+    position: absolute;
+    height: 45%;
+    margin-top: 160px;
+    width: 100%;
+}
+#slider #home .mainlogo h1, 
+#slider #home .mainlogo h3{
+    margin: 0px;
+    padding: 0px;
+}
+#slider #home .mainlogo h1{
+    color: rgb(251, 255, 0);
+    font-size: 3em;
+    line-height: 45px;
+    margin: 10px;
+}
+#slider #home .mainlogo h3{
+    color: white;
+    margin: 10px;
+}
+#slider #home #analisisweb{
+   text-align: center;
+   background: black;
+   position: relative;
+   height: 50px;
+   width: 200px;
+   margin: 10px;
+   border-radius: 50px;
+   border: 1.2px solid yellow;
+}
+#analisisweb a{
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px ;
+}
+#analisisweb span{
+    position: absolute;
+}
+#analisisweb span:before{
+    font-family: "icomoon";
+    font-size: 0.8em;
+    position: absolute;
+    top:15px;
+    left: 20px;
+    line-height: 18px;
+    content: "\ea3c";
+    width: 18px;
+    height: 18px;
+    background: yellow;
+    border-radius: 50%;
+    color: black
+}
+.mainlogo p{
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0px;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+#contact_form{
+    position: relative;
+    width: 100%;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+#contact_form form h2,
+#contact_form form p{
+    width: 90%;
+    margin-left: 5%;
+}
+#contact_form h2{
+    font-size: 3em;
+}
+#contact_form  p{
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+#contact_form input,
+#contact_form textarea{
+    display: block;
+    width: 89%;
+    overflow: hidden;
+    margin: 12px;
+    margin-left: 5%;
+    padding: 10px 0px;
+    padding-left: 1%;
+    border: solid 0.5px gainsboro;
+    background: lavender;
+    border-radius: 5px;
+    border-color: none;
+    color: gray;
+}
+#contact_form #button{
+    width: 90%;
+    background: gray;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+#home #strategy{
+    position: relative;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    margin-top: 50px;
+}
+#strategy p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: gray;
+}
+
+ #strategy >*{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
+.strategy_part1 h2{
+    font-size: 2.4em;
+    color: black;
+}
+.strategy_part2 h3,
+.strategy_part2 p{
+    margin: 0px;
+    padding: 0px;
+}
+.strategy_part2 h3{
+    padding: 20px 0px;
+    color: orange;
+    font-size: 1.5em;
+}
+.strategy_part2{
+    margin-top: 50px;
+}
+.strategy_part2 >*{
+    border-bottom: gray solid 1px;
+}
+.strategy_part2 p{
+    display: none;
+    margin-bottom: 20px;
+}
+.strategy_part2 div{
+    position: relative;
+    cursor: pointer;
+}
+.strategy_part2 div:before{
+  position: absolute;
+  content: '';
+  top: 25px;
+  left:  95%;
+  border-style: solid;
+  border-width: 8px 0px 8px 8px;
+  border-color: transparent transparent transparent black;
+  cursor: pointer;
+  transition-duration:0.3s ;
+}
+.strategy_part2 div:hover:before{
+    animation: 1s moverflecha 1;
+}
+#clientes{
+    position: relative;
+    top: 0px;
+    background: black;
+    width: 100%;
+}
+#clientes h3{
+    font-size: 2.8em;
+    font-family: 'Helvetica';
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    color: yellow;
+    margin-left: 5%;
+}
+#clientes p{ 
+    margin-left: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#clientes #client_images{
+    width: 90%;
+    margin-left: 5%;
+    padding: 50px 0px;
+}
+#clientes  figure{
+    position: relative;
+    margin: 0px;
+    margin-left: 10px;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+#clientes .client_images:before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    
+    display: none;
+    transition-duration:0.3s;
+}
+#clientes .client_images:hover:before{
+    display: block;
+    animation: 1s ioBorde 1;
+}
+
+#slider #aboutme{
+    /*height: 600px;*/
+    position: relative;
+    top: 50px;
+    width: 100%;
+    margin-top: 50px;
+    /*overflow: hidden;*/
+}
+#aboutme >*:first-child{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 350px;
+    padding-top: 50px;
+    color: white;
+    background:  linear-gradient(to right, hsla(330, 3%, 13%, 0.459), 
+            hsla(317, 8%, 17%, 0.664)), url(../img/imaxavi.png); 
+    background-size: cover;
+    background-position: bottom;
+}
+#aboutme >*:first-child h2{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-size: 2.5em;
+}
+#aboutme >*:first-child h2 span{
+    display: block;
+}
+#aboutme >*:first-child p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+#aboutme >*:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0px;
+    color: gray;
+    background: white;
+}
+#aboutme >*:nth-child(2) p{
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+}
+#aboutme >*:nth-child(3){
+    background: rgb(236, 235, 235);
+    margin-top: 30px;
+}
+#aboutme >*:nth-child(3) figure{
+    margin: 0px;
+    padding: 0px;
+    /*width: 280px;
+    height: 280px;*/
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px 5px 2.5px 0px;
+}
+#aboutme >*:nth-child(3) figure img{
+    height:  120%;
+    top: -10px;
+    margin-left: -10px;
+    position: absolute;
+}
+#instaXavy a{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(45, 45, 248);
+    text-decoration: none;
+    margin-left: 5px;
+}
+#instaXavy:first-child div{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: rgb(59, 59, 59);
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#instaXavy a:hover{
+    color: gray;
+}
+#instaXavy:first-child div:before{
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\ea92";
+    font-size: 1.6em;
+    top: 0px;
+    left: 12px;
+    color: white;
+}
+#instaXavy:first-child div:hover{
+    background: gray;
+}
+#fotos{
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+#fotos>*{
+    cursor: pointer;
+}
+
+#slider #precios{
+    /*height: 600px;*/
+    position: relative;
+    top: 50px;
+    width: 100%;
+    margin-top: 50px;/*overflow: hidden;*/
+    background: white;
+}
+section #precios>*{
+    text-align: center;
+}
+section .rotulo{
+    height: 100px;
+    text-align: center;
+    background: #FFD52D;
+    width: 100%;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+section .rotulo p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8%;
+    padding-top: 20px;
+    margin-right: 8%;
+    line-height: 30px;
+}
+section .plan{
+    width: 96%;
+    margin-left: 2%;
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section .titulo{
+    height: 100px;
+    background: #FFD52D;
+}
+section .titulo>*:first-child{
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+}
+section .titulo>*:first-child::before{
+    position: absolute;
+    content: '';
+    right: 0px;
+    bottom: -83.5px; 
+    border-color: #EAC324 transparent transparent #EAC324;
+    border-style: solid;
+    border-width: 15px 15px 15px 15px;
+}
+section .titulo>*:nth-child(2){
+    margin: 0px;
+    margin-top: 8px;
+    font-size: 0.8em;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section .plan .content{
+    position: relative;
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 1px;
+}
+section .plan .content>*:first-child{
+    position: absolute;
+    margin: 0px;
+    top: 0px;
+    margin-left: 50%;
+    left: -15px;
+    margin-top: 20px;
+}
+section .plan .content>*:nth-child(2){
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+    font-size: 4em;
+}
+section .plan .content:hover{
+    border-color: #FFD52D;
+}
+section .content div .viñetas{
+    background: black;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+section .content div p{
+    display: inline-block;
+}
+section .content h2 span{
+    font-size:0.5em;
+    position: relative;
+    top:-22px;
+}
+section .content div .viñetas:before{
+    font-family: 'icomoon';
+    position: relative;
+    top:-0.6px;
+    font-size: 0.7em;
+    color: white;
+    content: "\ea3c";
+}
+
+#contact_form2{
+    position: relative;
+    width: 100%;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+#contact_form2 form h2,
+#contact_form2 form p{
+    width: 90%;
+    margin-left: 5%;
+}
+#contact_form2 h2{
+    font-size: 3em;
+    color: #FFD52D;
+}
+#contact_form2  p{
+    margin-top: -25px;
+    margin-bottom: 50px;
+    color: gray;
+}
+#contact_form2 input,
+#contact_form2 textarea{
+    display: block;
+    width: 89%;
+    overflow: hidden;
+    margin: 12px;
+    margin-left: 5%;
+    padding: 10px 0px;
+    padding-left: 1%;
+    border: solid 0.5px gainsboro;
+    background: lavender;
+    border-radius: 5px;
+    border-color: none;
+    color: gray;
+}
+#contact_form2 #button2{
+    width: 90%;
+    background: gray;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+@-webkit-keyframes ioBorde{
+    25%{
+        border: 0.5px solid white;
+    }
+    35%{
+        border: 0.5px solid rgb(0, 132, 255);
+    }
+    100%{
+        border: 0.5px solid white;
+    }
+}
+
+@-webkit-keyframes moverflecha{
+	25%{
+		transform: translateX(-15px) rotate(0deg);
+	}
+	65%{
+		transform: translateX(-15px) rotate(90deg);
+	}
+	100%{
+        transform: rotate(90deg);
+    }
+}
+footer{
+    padding-top: 10px;
+    background: black;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    z-index: 90;
+    bottom: 0px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+footer >*{
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+}
+footer hr{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-top: solid 1px;
+    border-color: gray transparent transparent transparent;
+}
+footer .redes{
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+}
+footer .redes>*{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+footer .redes a:before{
+    font-family: 'icomoon';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 1.4em;
+}
+
+footer .redes a:first-child:before{
+    content: "\ea92";
+}
+footer .redes a:last-child:before{
+    content: "\ea9d";
+}
+
+@media screen and (min-width: 600px){
+    body{
+        background-color: orange;
+    }
+    #aboutme >*:nth-child(3) figure{   
+        width: 280px;
+        height: 280px;
+    }
+        
+
+}
+@media screen and (min-width: 767px){
+    body{
+        background-color: yellow;
+    }
+    header #hUno{
+        display: inline-block;
+        margin: 0px;
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+    }
+    header #hUno >*{
+        text-decoration: none;
+        /*display: inline-block;*/
+    }
+    header #hUno figure{
+        position: relative;
+        left: 5px;
+        bottom: -5px;
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+    header #hUno figure img{
+        width: 100%;
+    }
+    header nav{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 88%;
+       position: relative;
+       right: -1%;
+       top:0px;
+   }
+   header nav #showMenu,
+   header nav #hideMenu{
+       display: none;
+   }
+   header nav #card_menu{
+       display: inline-block;
+       background: none;
+       position: relative;
+       top:0px;
+       width: 100%;
+       text-align: right;
+       padding-bottom: 0px;       
+       /*transition-duration: 1s;*/
+   }
+   header nav #card_menu ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+   }
+   header nav #card_menu ul li{
+       display: inline-block;
+       width: 12%;
+       text-align: center;
+       margin: 0px -2px;
+       font-size: 0.75em;
+   }
+   header nav #card_menu ul li:hover{
+       background: none;
+   }
+   header nav #card_menu ul li:hover a{
+       font-size: 1.1em;
+   }
+   header nav #card_menu ul li a{
+       /**/padding-right: 0px;
+   }
+   #hDos{
+       display: none;
+   }
+   #strategy >*{
+    position: relative;
+    width: 40%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+    }
+    .strategy_part2{
+        margin-top: 15px;
+    }
+    #aboutme >*:first-child h2 span{
+        display: inline-block;
+    }
+    section .plan{
+        width: 30%;
+        display: inline-block;
+    }
+    section .plan .titulo{
+        height: 130px;
+    }
+    section .titulo>*:first-child::before{
+        bottom: -113.5px; 
+    }
+
+}
+@media screen and (min-width: 950px){
+    body{
+        background-color: green;
+    }
+
+}

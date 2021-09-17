@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Desarrollo</title>
+
+
+    <script src="js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet"  href="css/Helvetica.css">
+    <link rel="stylesheet"  href="css/icomoon.css">
+    <link rel="stylesheet"  href="css/design.css">
+
+</head>
+<body>
+    <header>
+        <div id="hUno">
+            <a href="index.html">
+                <figure>
+                    <img src="iconos/letra-x-2.png" alt="">
+                </figure>
+            </a>
+        </div>
+         
+        <nav id="ioMenu">
+            <div id="showMenu" class="ioMenuMovil" onclick="displayMenu()"></div>
+            
+            <div id="card_menu">
+                <div id="hideMenu" class="ioMenuMovil" onclick="displayMenu()"></div>
+                <ul>
+                    <li><a href="#" onclick="navSection('aboutme')">SOBRE MI</a></li>
+                    <li><a href="#" onclick="navSection('precios')">PRECIOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="slider">
+        <section class="slide" id="home" style="display: block">
+            <div class="mainlogo">  
+                <div id="cont_mainlogo">
+                    <h1>Soy Xabi, desarrollador de WordPress</h1>
+                    <h3>Ayudo a emprendedores a crear, mantener y mejorar   sus webs</h3>
+                    <div class="buttonspace">
+                        <div id="analisisweb">
+                            <span></span><a href="#contact_form">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANÁLISIS WEB</a>
+                        </div>
+                    </div>
+                </div>
+                <p>¿CÓMO LO HAGO?</p>
+            </div>
+
+            <div id="strategy">
+                <div class="strategy_part1">
+                    <h2>Trabajo 100% dedicado a tu proyecto</h2>
+                    <p>¿Tu objetivo es conseguir más clientes, vender más, llegar con tu mensaje a más gente?</p>
+                </div>
+                <div class="strategy_part2">
+                    <div  onclick="displayStategy('analisis')">
+                        <h3>Análisis</h3>
+                        <p id="analisis">Con los datos que me facilites, haré un análisis de tus necesidades, del estado actual de tu proyecto y te mandaré un video en el que te explico mis conclusiones.</p>
+                    </div>
+                    <div  onclick="displayStategy('reunion')">
+                        <h3>Reunión</h3>
+                        <p id="reunion">Una vez tomemos la decisión de trabajar juntos, a través de skype o por teléfono, definiremos la estrategia a seguir a partir de ese momento.</p>
+                    </div>
+                    <div  onclick="displayStategy('desarrollo')">
+                        <h3>Desarrollo</h3>
+                        <p id="desarrollo">Una vez reciba todo el contenido: textos, imágenes, videos, etc y el 50% del importe del proyecto, me pondré manos a la obra con tu nueva web, que dependiendo de lo que necesites, podrá estar lista en al menos 7 días.</p>
+                    </div>
+                    <div  onclick="displayStategy('publicacion')">
+                        <h3>Publicación</h3>
+                        <p id="publicacion">¡La web está lista!, la revisamos juntos y cambiamos lo que no te guste. Una vez esté todo correcto y recibido el otro 50% del importe ¡la publicamos!</p>
+                    </div>
+                    <div  onclick="displayStategy('seguimiento')">
+                        <h3>Seguimiento</h3>
+                        <p id="seguimiento">Podremos seguir trabajando juntos si así lo necesita tu proyecto. Cuento con una amplia red de profesionales dedicada al Marketing Online, SEO, Google Ads, Facebook, Crowdfounding, etc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="clientes">
+                <h3>Clientes Satisfechos</h3>
+                <p>La mejor publicidad...</p>
+                <div id="client_images">
+                    <figure class="client_images"><img src="img/1.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/2.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/3.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/4.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/5.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/6.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/7.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/8.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/9.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/10.jpg" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/11.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/12.png" alt=""></figure>
+
+                    <figure class="client_images"><img src="img/13.png" alt=""></figure>
+                </div>
+            </div>
+            
+            <div id="contact_form"><!--contendor global-->
+                <form action="contact.php" id="form1" name="form1" method="POST">
+                    
+                    <h2 id="hablemos"><br/><br/>Hablemos!</h2>
+                    <p>Cuáles son los objetivos de tu negocio. ¿Qué esperas conseguir con tu web? ¿A qué público va dirigida?</p>
+
+                    <input type="text" id="name" name="name" placeholder="Nombre*"/>
+
+                    <input type="text" id="email" name="email" placeholder="Mail*"/>
+
+                    <input type="text" id="phone" name="phone" placeholder="Teléfono"/>
+
+                    <input type="text" id="empresa" name="empresa" placeholder="Nombre de la marca o empresa"/>
+
+                    <input type="text"  id="site" name="site" placeholder="Página web actual"/>
+
+                    <textarea name="message" id="message" cols="30" rows="3" placeholder="Mensaje"></textarea>
+
+                    <input type="submit" name="Submit" id="button" value="ENVIAR" />
+
+                </form>
+            </div>
+            <footer>
+                <hr></hr>
+                <p>© 2019 derechos reservados.</p>
+                
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank"></a>
+                    <a href="https://www.facebook.com/" target="_blank"></a>
+                </div>
+            </footer>
+            
+        </section>
+
+        <section class="slide" id="aboutme" style="display: none">
+            <div>
+                <h2>Soy Xabi <span>Sanmiguel</span></h2>
+                <p>Llevo entre ordenadores desde el Windows 3.1
+                    Descubrí internet cuando no existía ninguna conexión más rápida que un modem de 56k. Si estabas conectado y llamaban a casa, te quedabas sin internet.</p>
+            </div>
+            <div>
+                <p>Con 18 años me fui a vivir a Vigo y me formé en fotografía en blanco y negro, especializándome en fotoperiodismo con Delmi Álvarez en la EISV.
+                    Trabajé un tiempo para una agencia de prensa haciendo fotos de deportes y conciertos. Era un <strike> coñazo</strike> muy aburrido… fue por eso que empecé a darle vueltas a la World Wide Web.
+                    Al poco tiempo hice mi primera web para un club de bicicletas con Adobe Dreamweaver.
+                    Por aquel entonces no existían ni las tarifas planas de navegación, por lo que no quedaba otra que pagarle a telefónica 30.000 pesetas.. al mes!!
+                    Con el tiempo, me formé como desarrollador web en distintas plataformas y también de forma autodidacta, hasta llegar a WordPress.
+                    
+                    </p>
+                    <p>A lo largo de estos años he hecho webs corporativas, directorios, foros, blogs, intranets, membership sites, e-commerce… todo ello bajo WordPress</p>
+                    <p>El mundo online nunca deja de evolucionar, por lo que tengo que estar en constante formación.
+                        Actualmente formo parte de una academia audiovisual en la que aprendo y pongo en practica conocimientos sobre podcasting, video y redes sociales.</p>
+            </div>
+            <div>
+                <div id="instaXavy">
+                    <div>
+                        <a href="https://www.instagram.com/xabisanmiguel/" target="_blank"></a>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/xabisanmiguel/" target="_blank">xabisanmiguel</a>
+                </div>
+                <div id="fotos">
+                    <a href="https://www.instagram.com/p/CA74Fs9jf24/" target="_blank">
+                        <figure class="fotos"><img src="img/camino.JPG" alt=""></figure>
+                    </a>
+                    <a href="https://www.instagram.com/p/CA74Fs9jf24/" target="_blank">
+                        <figure class="fotos"><img src="img/niebla.JPG" alt=""></figure>
+                    </a>
+                    <figure class="fotos"><img src="img/perro.JPG" alt=""></figure>
+                    <figure class="fotos"><img src="img/playa.JPG" alt=""></figure>
+                    <figure class="fotos"><img src="img/pesca.JPG" alt=""></figure>
+                    <figure class="fotos"><img src="img/palmera.JPG" alt=""></figure>
+                    <figure class="fotos"><img src="img/yate.JPG" alt=""></figure>
+                    <figure class="fotos"><img src="img/auto.JPG" alt=""></figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="precios" style="display: none">
+            <div id="anuncio" class="rotulo">
+                <p>Actualmente existe una lista de espera hasta <strong>Agosto 2020.</strong> </p>
+            </div>
+
+            <div class="plan plan1">
+                <div class="primium titulo">
+                    <h2>Premium</h2>
+                    <p>Webs Multisites, Membership Sites, formación y/o Academias, Foros, Gamificación.​</p>
+                </div>
+                <div class="content">
+                    <p>desde</p>
+                    <h2>1700<span>€</span></h2>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Arquitectura optimizada</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>100% Responsive</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Framework Genesis</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Plugins premium</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Dos idiomas</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Pasarelas de pago</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>SSL Certificada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan plan2">
+                <div class="estandar titulo">
+                    <h2>Estandar</h2>
+                    <p>Ideal para Blogs, Webs monoproducto, Eventos, Profesiones liberales, Podcasting​.</p>
+                </div>
+                <div class="content">
+                    <p>desde</p>
+                    <h2>950<span>€</span></h2>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Seo optimizado</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Adaptada a móviles</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Autogestionable</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Una hora de formación</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Un idioma</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Integración redes sociales</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>SSL Certificada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan plan3">
+                <div class="amedida titulo">
+                    <h2>A medida</h2>
+                    <p>Intranets de empresa, directorios, sistemas de compra venta, tiendas online y funcionalidades no estándar.</p>
+                </div>
+                <div class="content">
+                    <p>desde</p>
+                    <h2>2500<span>€</span></h2>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Diseño y desarrollo a medida</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Elección de framework</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Adaptación de plugins</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Woocommerce</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Pasarelas de pago</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Varios idiomas</p>
+                    </div>
+                    <div>
+                        <div class="viñetas"></div>
+                        <p>Fotografía y video</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact_form2"><!--contendor global-->
+                <form action="contact.php" id="form2" name="form2" method="POST">
+                    
+                    <h2 id="hablemos2"><br/><br/>Reserva tu web</h2>
+                    <p>Para poder trabajar conmigo es necesario que reserves sitio!</p>
+
+                    <input type="text" id="name2" name="name" placeholder="Nombre*"/>
+
+                    <input type="text" id="email2" name="email" placeholder="Mail*"/>
+
+                    <input type="text" id="phone2" name="phone2" placeholder="Teléfono"/>
+
+                    <input type="text" id="empresa2" name="empresa2" placeholder="Nombre de la marca o empresa"/>
+
+                    <input type="text"  id="site2" name="site2" placeholder="Página web actual"/>
+
+                    <textarea name="message2" id="message2" cols="30" rows="3" placeholder="Mensaje"></textarea>
+
+                    <input type="submit" name="Submit2" id="button2" value="ENVIAR" />
+
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div id="hDos">
+        <a href="index.html">
+            <figure>
+                <img src="iconos/letra-x-2.png" alt="">
+            </figure>
+        </a>
+    </div>
+    
+    
+    <script>
+        var sections = new Array(3);
+        sections[0] = "home";
+        sections[1] = "aboutme";
+        sections[2] = "precios";
+
+        function setColors(i){
+            var search;
+            var bkgr_body;
+            var bkgr_menu;
+            if(sections[i] == "home"){
+                bkgr_menu = "#f1f1f1";
+                bkgr_body = "white"; 
+            }
+            else{
+                bkgr_menu = "white";
+                bkgr_body = "white";  
+            }
+                search = document.getElementById(sections[i]);
+                search.style.background = bkgr_body;
+                var menu = document.getElementsByTagName("header")[0];
+                menu.style.background = bkgr_menu;     
+        }
+
+        function displayStategy(steep){
+            var sections = new Array(5);
+            sections[0] = "analisis";
+            sections[1] = "reunion";
+            sections[2] = "desarrollo";
+            sections[3] = "publicacion";
+            sections[4] = "seguimiento";
+            var search;
+            var show;
+            var cont=0;
+            
+            for(var i=0; i<sections.length; i++){
+               search = document.getElementById(sections[i]);
+               if(sections[i]==steep ){
+                    if(search.style.display=="none" || search.style.display=="")
+                        search.style.display = "block";
+                    else
+                    search.style.display = "none";
+               }
+               else{
+                    search.style.display="none";
+               }
+            }
+        }
+        
+        function navSection(nav){
+            /*displayMenu();*/
+            var search;
+            var show;
+            for(var i=0; i<5 ; i++){
+                search = document.getElementById(sections[i]);
+                search.style.display="none";
+                if(sections[i]==nav){
+                    search.style.display="block";
+                    setColors(i);
+                }
+                else{
+                    search.style.display="none";
+                }
+        
+            }
+        }
+
+        function displayMenu(){
+            var card_menu = document.getElementById("card_menu");
+            var display;
+            display = card_menu.style.display;
+            if(display =='none' || display == ""){
+                card_menu.style.display="block";
+            }
+            else{
+                card_menu.style.display="none";
+            }
+        }
+        function displaySection(nav){
+            
+            var search;
+            var show;
+            for(var i=0; i<5 ; i++){
+                search = document.getElementById(sections[i]);
+                show = search.style.display;
+
+                if(show == "block"){
+                    search.style.display="none";
+                    if(nav=="next"){
+                        i++;
+                        if(i>2) i=0;
+                    }
+                    if(nav=="prev"){
+                        i--;
+                        if(i<0) i = 2;
+                    }
+                    search = document.getElementById(sections[i]);
+                    search.style.display="block";
+                    break;
+                }         
+            }
+
+            var bkgr_body;
+            var bkgr_menu;
+            if(sections[i] == "home"){
+                bkgr_menu = "#f1f1f1";
+                bkgr_body = "white"; 
+            }
+            else{
+                bkgr_menu = "white";
+                bkgr_body = "#f1f1f1";  
+            }
+            search.style.background = bkgr_body;
+            var menu = document.getElementsByTagName("header")[0];
+            menu.style.background = bkgr_menu; 
+        }
+    </script>
+</body>
+</html>
